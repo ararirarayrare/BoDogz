@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="ReminderTableViewCell" customModule="GrowMyPlant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dog name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8L-nF-aPY">
+                        <rect key="frame" x="16" y="8" width="218" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Z8L-nF-aPY" secondAttribute="height" multiplier="218:25" id="B5q-Wf-Sjn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fy-5g-uxH">
+                        <rect key="frame" x="16" y="37" width="218" height="57"/>
+                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-MI-H6s">
+                        <rect key="frame" x="266" y="42" width="101" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ElU-MI-H6s" firstAttribute="leading" secondItem="Z8L-nF-aPY" secondAttribute="trailing" constant="32" id="1n0-5D-k1c"/>
+                    <constraint firstAttribute="trailing" secondItem="ElU-MI-H6s" secondAttribute="trailing" constant="24" id="2tF-oa-GPA"/>
+                    <constraint firstAttribute="bottom" secondItem="1Fy-5g-uxH" secondAttribute="bottom" constant="8" id="Dkm-eD-rRg"/>
+                    <constraint firstItem="ElU-MI-H6s" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.258312" id="JVE-Jp-KXK"/>
+                    <constraint firstItem="1Fy-5g-uxH" firstAttribute="top" secondItem="Z8L-nF-aPY" secondAttribute="bottom" constant="4" id="LCr-oc-B0v"/>
+                    <constraint firstItem="ElU-MI-H6s" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OOD-db-VyA"/>
+                    <constraint firstItem="Z8L-nF-aPY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YZQ-ua-VQK"/>
+                    <constraint firstItem="ElU-MI-H6s" firstAttribute="leading" secondItem="1Fy-5g-uxH" secondAttribute="trailing" constant="32" id="aUL-lD-Oyd"/>
+                    <constraint firstItem="1Fy-5g-uxH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="o4F-HA-S0b"/>
+                    <constraint firstItem="Z8L-nF-aPY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="q1X-0m-VKw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="ElU-MI-H6s" id="vAz-Kt-myL"/>
+                <outlet property="descriptionLabel" destination="1Fy-5g-uxH" id="OZV-ge-ksl"/>
+                <outlet property="nameLabel" destination="Z8L-nF-aPY" id="Yuq-gK-dOx"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
